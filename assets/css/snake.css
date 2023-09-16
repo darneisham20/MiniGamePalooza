@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+.snake_wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #293447;
+}
+
+.snake_game_details {
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.snake_play_board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837;
+}
+
+.snake_play_board .food {
+    background: #ff446f;
+}
+.snake_play_board .head {
+    background: #9aa9fd;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 25px 0;
+    color: #B8C6DC;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #171b26;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding-top: 60px;
+    }
+
+    .snake_wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .snake_game_details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}

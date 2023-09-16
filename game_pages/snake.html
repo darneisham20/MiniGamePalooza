@@ -15,6 +15,9 @@
     <!-- ==== SNAKE CSS ==== -->
     <link rel="stylesheet" href="/assets/css/snake.css">
 
+    <!-- ==== CLOUDFLARE CSS ==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
     <title>Mini-Game Palooza</title>
 </head>
 
@@ -37,11 +40,26 @@
     
     <!-- ==== MAIN ==== -->
     <main>
-        <h1>Snake</h1>
+        <div class="snake_wrapper">
+            <div class="snake_game_details">
+                <span class="snake_score">Score: 0</span>
+                <span class="snake_high_score">High Score: 30</span>
+            </div>
+
+            <div class="snake_play_board"></div>
+            
+            <div class="controls">
+                <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+                <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+                <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+                <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+            </div>
+        </div>
+
     </main>
 
     <!-- ==== FOOTER ==== -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer_container container">
             <ul class="footer_social">
                 <a href="https://www.linkedin.com/in/darneishamiller/" target="_blank" class="footer_social-link">
@@ -57,7 +75,7 @@
                 &#169; 2023 | Coded by Darneisha Miller ♡
             </span>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- ==== MAIN JS ==== -->
     <script src="/assets/js/snake.js"></script>
