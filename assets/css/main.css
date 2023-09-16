@@ -158,10 +158,9 @@ input {
 }
 
 /*==== FOOTER ====*/
-/* .footer_container {
+.footer_container {
     padding: 3rem 0 7rem;
     margin-top: 15px;
-
     text-align: center;
     position: relative;
     bottom: 0;
@@ -199,7 +198,23 @@ input {
     margin-top: 3.5rem;
     font-size: var(--small-font-size);
     color: var(--second-color);
-} */
+}
+
+/*==== SCROLL BAR ====*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(204, 4%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(240, 48%, 82%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(240, 23%, 60%);
+}
 
 /*==== MEDIA QUERIES ====*/
 /* Small Devices */
@@ -249,10 +264,9 @@ input {
         height: 450px;
     }
 
-    /* .footer_copy {
+    .footer_copy {
         margin-top: 2rem;
-        font-size: var(--smaller-font-size);
-    } */
+    }
 }
 
 /* Medium Devices */
